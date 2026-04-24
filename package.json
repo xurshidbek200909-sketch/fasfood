@@ -15,5 +15,13 @@
     "axios": "^1.15.2",
     "cors": "^2.8.6",
     "express": "^5.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xurshidbek200909-sketch/fasfood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xurshidbek200909-sketch/fasfood/issues"
+  },
+  "homepage": "https://github.com/xurshidbek200909-sketch/fasfood#readme"
 }
