@@ -1,0 +1,275 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+/* DEFAULT LIGHT MODE */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.4s;
+  background: #fff8f5;
+  color: #222;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0f0f0f;
+  color: black;
+}
+
+
+/* BUTTON (sening premium style) */
+.pro-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #ff7a3d, #ff3d00);
+  box-shadow: 0 8px 25px rgba(255, 80, 0, 0.35);
+  transition: 0.3s;
+}
+
+.pro-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(255, 80, 0, 0.6);
+}
+
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: #ff5f00;
+}
+
+/* NAV */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav button{
+  margin-left: 20px;
+}
+nav a:hover {
+  color: #ff5f00;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffe0d2, #fff5f0);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  color: #ff5f00;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #ff7a3d;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff5f00;
+  transform: scale(1.05);
+}
+
+/* MENU */
+.menu {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
+  color: #ff5f00;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* CONTACT */
+#contact {
+  padding: 60px;
+  text-align: center;
+  background: #fff;
+}
+.food-img {
+  width: 100%;
+  height: 180px; /* hammasi bir xil balandlik */
+  object-fit: cover; /* rasmni kesib moslashtiradi */
+  border-radius: 15px;
+}
+.food-img {
+  transition: 0.3s;
+}
+
+.food-img:hover {
+  transform: scale(1.05);
+}
+/* IMAGE WRAPPER */
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* IMAGE */
+.food-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+/* BLUR OVERLAY */
+.img-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+}
+
+/* HOVER EFFECT */
+.img-box:hover .food-img {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn_001 {
+  padding: 8px 15px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.cart {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  nav button {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 25px;
+  }
+
+  nav a {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    padding: 20px;
+  }
+
+  nav a {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 280px) {
+  header {
+    padding: 10px;
+  }
+
+  nav a {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}

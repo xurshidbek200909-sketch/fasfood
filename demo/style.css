@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #222;
+  color: white;
+}
+
+.box {
+  margin: 50px auto;
+  padding: 20px;
+  width: 200px;
+  background: black;
+  border-radius: 10px;
+}
